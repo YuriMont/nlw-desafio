@@ -6,19 +6,25 @@
 
 }
 html, body{
+    --gray:#E1E1E6;
+    --black:  #C4C4CC; 
+
     height: 100%;
 }
 
 body{
+    
     display: grid;
     text-align: center;
     place-items: center;
-    background:url(image/fundo.png);
+    background:url(image/fundo.png) no-repeat;
     width: 100vw;
     background-size: cover;
 }
 
 main{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
     position: absolute;
     top: 140px;
     background: url(image/main-background.png) no-repeat;
@@ -46,8 +52,7 @@ main{
 }
 
 .avatar{
-    top: 58px;
-    left: -10px;
+    margin-top: 56px;
     position: relative;
 }
 
@@ -64,4 +69,36 @@ main{
     height: 184px;
     object-fit: cover;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1{
+    font-size: 24px;
+    color: var(--gray);
+    margin-top: 24px;
+}
+
+a{
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+p{
+    padding: 0;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 32px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0%;
+    margin-top: 40px;
+    gap: 8px;
+    justify-content: center;
 }
