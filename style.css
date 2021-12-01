@@ -88,7 +88,10 @@ a{
 }
 
 p{
-    padding: 0;
+    position: relative;
+    width: 262px;
+    height: 48px;
+    left: 48px;
     font-size: 14px;
     color: var(--gray);
     margin-top: 32px;
@@ -98,7 +101,7 @@ ul{
     list-style: none;
     display: flex;
     padding: 0%;
-    margin-top: 40px;
+    margin-top: 30px;
     gap: 8px;
     justify-content: center;
 }
