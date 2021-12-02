@@ -14,6 +14,7 @@ function changeSocialMediaLinks(){
 }
 
 function getGitHubProfileInfos(){
+    document.getElementsByClassName("linkGitHub").item('a').href=`https://github.com/${linksSocialMedia.github}`;
     const url = `https://api.github.com/users/${linksSocialMedia.github}`;
     fetch(url)
     .then(response => response.json())
